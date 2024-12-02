@@ -1,0 +1,8 @@
+.move-left {
+  position: absolute; /* 부모 요소 기준으로 이동 */
+  right:70px; /* 부모 요소의 오른쪽에서 20px 떨어지게 설정 */
+}
+.move-right {
+  position: absolute; /* 부모 요소 기준으로 이동 */
+  left: 70px; /* 부모 요소의 오른쪽에서 20px 떨어지게 설정 */
+}

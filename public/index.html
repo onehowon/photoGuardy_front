@@ -1,43 +1,135 @@
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PhotoGuardy</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Gradio JS -->
+  <script
+    type="module"
+    src="https://gradio.s3-us-west-2.amazonaws.com/4.44.1/gradio.js"
+  ></script>
+</head>
+<header class="flex justify-between items-center px-10 py-5 bg-white shadow-sm">
+  <h1 class="text-2xl font-bold text-[#107bff]">PhotoGuardy</h1>
+  <nav class="flex space-x-8">
+    <a href="index.html" class="text-base font-bold  text-[#107bff]">Home</a>
+    <a href="about.html" class="text-base font-bold text-black hover:text-[#107bff]">About</a>
+    <a href="pricing.html" class="text-base font-bold text-black hover:text-[#107bff]">Pricing</a>
+  </nav>
+  </header>
+
+<div class="w-full h-[750px] relative">
+  <div class="w-[100%] max-w-[1500px] h-[348.62px] absolute"
+      style="top: 25%; left: 50%; transform: translate(-50%, -50%);"
+  >
+    
+      <svg
+      width="580"
+      height="773"
+      viewBox="0 0 580 773"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      class="w-[580px] h-[773px]"
+      preserveAspectRatio="none"
+    >
+      <circle cx="308" cy="173" r="3" fill="#24FF00"></circle>
+      <circle cx="421" cy="47" r="4" fill="#4D4D4D"></circle>
+      <circle cx="103" cy="117" r="7" fill="#0047FF"></circle>
+      <circle cx="573" cy="23" r="7" fill="#0047FF"></circle>
+      <circle cx="92" cy="43" r="3" fill="#FF0000"></circle>
+      <circle cx="7" cy="57" r="7" fill="#0DB760"></circle>
+      <circle cx="384" cy="114" r="7" fill="#0DB760"></circle>
+      <circle cx="377" cy="246" r="7" fill="#FF0000"></circle>
+      <circle cx="505" cy="253" r="7" fill="#0DB760"></circle>
+      <circle cx="448" cy="203" r="3" fill="#0047FF"></circle>
+      <circle cx="305" cy="3" r="3" fill="#0047FF"></circle>
+      <circle cx="535" cy="179" r="7" fill="#F9F047"></circle>
+      <circle cx="72" cy="669" r="3" fill="#24FF00"></circle>
+      <circle cx="65" cy="759" r="7" fill="#FF0000"></circle>
+      <circle cx="193" cy="766" r="7" fill="#0DB760"></circle>
+      <circle cx="136" cy="716" r="3" fill="#0047FF"></circle>
+      <circle cx="146" cy="679" r="7" fill="#F9F047"></circle>
+    </svg>
+    <div class="w-[138px] h-14">
+      <svg
+        width="138"
+        height="56"
+        viewBox="0 0 138 56"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        class="absolute left-[107.5px] top-[565.5px]"
+        preserveAspectRatio="none"
+      >
+      </svg>
+      <p class="absolute left-[145px] top-[580px] text-base font-medium text-center text-white">
+        Try Now
+      </p>
+    </div>
+    <svg
+      width="34"
+      height="34"
+      viewBox="0 0 34 34"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      class="w-6 h-6 absolute left-[435.19px] top-[611.5px]"
+      preserveAspectRatio="none"
+    >
+      <path
+        d="M18.9177 10.6522L24.1715 11.3746M24.1715 11.3746L23.4492 16.6285M24.1715 11.3746L9.82864 22.2503"
+        stroke="#0DB760"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+    </svg>
+    <p class="absolute left-[100px] top-[334px] text-[58px] font-semibold text-left">
+      <span class="text-[58px] font-semibold text-left text-[#107bff]">딥페이크</span
+      ><span class="text-[58px] font-semibold text-left text-[#0b0c0c]">로부터</span><br /><span
+        class="text-[58px] font-semibold text-left text-[#0b0c0c]"
+        >우리의 사진을 </span
+      ><span class="text-[58px] font-semibold text-left text-[#107bff]">보호</span
+      ><span class="text-[58px] font-semibold text-left text-[#0b0c0c]">하세요.</span>
+    </p>
+    <p class="w-[540px] absolute left-[110px] top-[520px] text-base text-left text-[#323433]">
+      Protect our photos from deepfakes
+    </p>
+    <div class="w-[99px] h-[42px]">
+      <p class="absolute left-[110px] top-72 text-xl font-medium text-left text-[#107bff]">
+        Welcome
+      </p>
+      <svg
+        width="99"
+        height="42"
+        viewBox="0 0 99 42"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        class="absolute left-[159.75px] top-[281.75px]"
+        preserveAspectRatio="none"
+      >
+        <path
+          d="M98.75 21C98.75 23.814 97.4068 26.5164 94.933 28.9976C92.4582 31.4799 88.8647 33.7268 84.4042 35.6191C75.4841 39.4034 63.1438 41.75 49.5 41.75C35.8562 41.75 23.5159 39.4034 14.5959 35.6191C10.1354 33.7268 6.54176 31.4799 4.067 28.9976C1.59324 26.5164 0.25 23.814 0.25 21C0.25 18.186 1.59324 15.4836 4.067 13.0024C6.54176 10.5201 10.1354 8.27324 14.5959 6.3809C23.5159 2.59664 35.8562 0.25 49.5 0.25C63.1438 0.25 75.4841 2.59664 84.4042 6.3809C88.8647 8.27324 92.4582 10.5201 94.933 13.0024C97.4068 15.4836 98.75 18.186 98.75 21Z"
+          stroke="white"
+          stroke-width="0.5"
+        ></path>
+      </svg>
+    </div>
+    <img
+      src="/images/image206.png"
+      class="w-[500px] h-[500px] absolute left-[830.5px] top-[130.5px] object-object-contain"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+  </div>
+</div>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<div class="mt-10">
+  <gradio-app
+    src="https://onehowon-adversarial-attack-pgd.hf.space"
+    class="block mx-auto mt-5"
+  ></gradio-app>
+</div>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
-</html>
+  
